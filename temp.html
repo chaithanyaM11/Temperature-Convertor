@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hiTemperature Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="tempcon">
+      <h1>Temperature Converter</h1>
+      <form action="">
+        <div class="row">
+          <div class="leftdiv">
+            <label class="ldeg">Degree</label>
+            <input class="deg" type="number" placeholder="value">
+          </div>
+          <!-- <div class="leftdiv">
+            <label class="ldeg">Degree</label>
+            <select id="degreeSelect" class="deg">
+                <option value=""></option>
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+            </select>
+        </div> -->
+          <div class="rightdiv">
+            <label class="typ">Type</label>
+            <select name="" id="converter">
+              <option value="">select</option>
+              <option class="cel" value="Celsius">Celsius</option>
+              <option class="kel" value="Kelvin">Kelvin</option>
+              <option class="far" value="fahrenheit">Fahrenheit</option>
+            </select> 
+          </div>
+        </div>
+        <div class="box">
+          <label class="Converstion-type">Convert To</label>
+          <select name="" id="converter1">
+            <option value="" >select</option>
+            <option class="con-cel" value="Celsius">Celsius</option>
+            <option class="con-kel" value="Kelvin">Kelvin</option>
+            <option class="con-far" value="fahrenheit">Fahrenheit</option>
+          </select>
+        </div>
+        <div class="solution">
+            <label class="Result" for="">Result</label><br>
+            <input class="answer" type="text" step="0.01" required>
+          </div>
+          <input class="btn" type="submit" value="Convert">
+
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
